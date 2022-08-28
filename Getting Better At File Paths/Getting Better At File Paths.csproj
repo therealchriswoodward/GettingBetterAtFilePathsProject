@@ -3,6 +3,12 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
+    <!-- REVIEW: This doesn't match the namespace used in Program.cs 
+          This comes from name of the project that isn't a valid identifier
+          in C#.
+          Because of this when adding a new C# file it will use this namespace 
+          and not the one you chosen for Program.cs
+    -->
     <RootNamespace>Getting_Better_At_File_Paths</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
